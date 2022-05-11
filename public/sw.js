@@ -6,5 +6,5 @@ self.addEventListener("push", (e) => {
       primaryKey: "3",
     },
   };
-  e.waitUntil(self.registration.showNotification("Hello World!", config));
+  e.waitUntil(self.registration.showNotification("Heldlo World!", config));
 });

@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
   useEffect(() => {
     window.addEventListener("load", async () => {
-      const sW = await navigator.serviceWorker.register("../sw.js");
+      const sW = await navigator.serviceWorker.register("/sw.js");
       console.log("SW registered: ", sW);
       const serviceWorker = await navigator.serviceWorker.ready;
       const clientID = await serviceWorker?.pushManager?.subscribe({
